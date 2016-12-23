@@ -30,6 +30,6 @@ const getGiphy = (req, res) => {
         res.json(data);
       }
     })
-    .catch((err) => { `Error: ${err}`; });
+    .catch((err) => { console.log(`Error: ${err}`); });
 };
 export default getGiphy;
