@@ -1,0 +1,22 @@
+{
+  "name": "clara-challenge-backend",
+  "version": "1.0.0",
+  "description": "GIF search web service",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm run prod:buildserver; node ./server-dist/app.js",
+    "prod:buildserver": "babel ./server -d ./server-dist --presets es2015,stage-2 --copy-files",
+    "dev:start": "nodemon ./server/app.js --exec babel-node --presets es2015,stage-2 & lt --port 8020",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliusbuckley/clara-challenge-backend.git"
+  },
+  "author": "Julius Buckley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juliusbuckley/clara-challenge-backend/issues"
+  },
+  "homepage": "https://github.com/juliusbuckley/clara-challenge-backend#readme"
+}
