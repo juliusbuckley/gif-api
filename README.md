@@ -21,6 +21,7 @@ git clone https://github.com/juliusbuckley/clara-challenge-backend.git
 Install project dependencies and transpile server folder:
 ```sh
 # run install script
+# script is checking for existence of babel-cli global install at /usr/bin/babel (please update if usr/bin is different)
 ./install.sh
 ```
 
