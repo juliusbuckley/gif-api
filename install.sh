@@ -1,7 +1,7 @@
 #  This script should do all the preparation for your project to run, such as downloading any dependencies and compiling if necessary
 echo "Installing dependencies..."
 npm install
-npm install babel-core --save
+npm install -g babel-cli
 wait
 echo "Install complete!"
 echo "Transpiling..."
