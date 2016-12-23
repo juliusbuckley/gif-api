@@ -1,3 +1,41 @@
+# GIF search web service
+
+## Installation steps
+
+#### Environment dependencies
+
+```sh
+# Node.js v7 installation on Digital Ocean droplet
+curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+
+#### Project dependencies
+
+Install project dependencies and transpile server folder:
+```sh
+# run install script
+./install.sh
+```
+
+## Running the Application
+
+#### Local development
+
+Start server and transpiling with bable-cli
+
+```sh
+# run dev start script
+npm run dev:start
+```
+#### Production
+
+Start server 
+```sh
+# run prod start script
+./start.sh
+```
+
 Clara Backend Challenge
 ============================
 
