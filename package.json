@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run prod:buildserver; node ./server-dist/app.js",
     "prod:buildserver": "babel ./server -d ./server-dist --presets es2015,stage-2 --copy-files",
-    "dev:start": "nodemon ./server/app.js --exec babel-node --presets es2015,stage-2 & lt --port 8080",
+    "dev:start": "nodemon ./server/app.js --exec babel-node --presets es2015,stage-2",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/juliusbuckley/clara-challenge-backend/issues"
   },
-  "homepage": "https://github.com/juliusbuckley/clara-challenge-backend#readme"
+  "homepage": "https://github.com/juliusbuckley/clara-challenge-backend#readme",
+  "dependencies": {
+    "axios": "^0.15.3",
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "express": "^4.14.0"
+  }
 }

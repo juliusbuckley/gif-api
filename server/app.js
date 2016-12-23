@@ -7,4 +7,6 @@ const port = 8080;
 
 gifRoutes(app);
 
-app.listen(() => { console.log(`app.js has been served on port: ${port}`); });
+app.listen(port, () => { 
+  console.log(`app.js has been served on port: ${port}`); 
+});
