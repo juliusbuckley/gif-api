@@ -4,6 +4,7 @@
 
 #### Environment dependencies
 Assumption: Ubuntu 16.04.1 x64 distribution on Digital Ocean
+Install node on Ubuntu server
 ```sh
 # Node.js v7 installation on Digital Ocean droplet
 curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
