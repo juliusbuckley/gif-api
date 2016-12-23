@@ -10,6 +10,12 @@ curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
+#### Clone project
+```sh
+# Clone repo from github
+git clone https://github.com/juliusbuckley/clara-challenge-backend.git
+```
+
 #### Project dependencies
 
 Install project dependencies and transpile server folder:
