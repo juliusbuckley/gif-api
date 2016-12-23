@@ -1,6 +1,5 @@
 import axios from 'axios';
 import qs from 'querystring';
-
 // PARSE RESPONSE DATA
 const parseResp = (giphyResp) => {
   const array = [];
@@ -12,17 +11,16 @@ const parseResp = (giphyResp) => {
   });
   return {data: array};
 };
-
 // CREATE QUERY STRING AND MAKE REQUEST TO GIPHY API
 const getGiphy = (req, res) => {
-  const searchUrl = 'http://api.giphy.com/v1/gifs/search';
+  const searchUrl = 'http://api.giphy.com/v1/gifs/search?';
   const parameters = {
     q: req.params.searchTerm,
     api_key: process.env.GIPHY_KEY,
     limit: 5
   };
   const paramUrl = qs.stringify(parameters);
-  const apiUrl = searchUrl + '?' + paramUrl;
+  const apiUrl = searchUrl + paramUrl;
   axios.get(apiUrl)
     .then((response) => {
       if (response.data.pagination.total_count < 5) {
@@ -34,5 +32,4 @@ const getGiphy = (req, res) => {
     })
     .catch((err) => { `Error: ${err}`; });
 };
-
 export default getGiphy;
