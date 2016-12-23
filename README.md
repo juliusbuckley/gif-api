@@ -11,8 +11,9 @@ sudo apt-get install -y nodejs
 ```
 
 #### Clone project
+Clone repo from github
 ```sh
-# Clone repo from github
+# run git clone
 git clone https://github.com/juliusbuckley/clara-challenge-backend.git
 ```
 
