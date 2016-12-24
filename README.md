@@ -30,7 +30,7 @@ Install project dependencies and transpile server folder:
 
 #### Local development
 
-Start server and transpile with bable-cli
+Start server and transpile with babel-cli
 
 ```sh
 # run dev start script
