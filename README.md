@@ -10,7 +10,7 @@ curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
-Set enviroment variables
+Set environment variables:
 ```sh
 # open the following file
 nano ~/.bashrc
