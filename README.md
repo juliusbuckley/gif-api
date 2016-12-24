@@ -43,6 +43,8 @@ Start server
 # run prod start script
 ./start.sh
 ```
+## Extra Optimizations
+
 #### Enable screen to manage sessions 
 ```sh
 # start a new screen
@@ -51,8 +53,26 @@ screen
 Ctrl-a d
 # list screens
 screen –ls
-#reattach screen
+# reattach screen
 screen -r idNumber
+```
+
+#### Avoid typing listen port into url 
+```sh
+# run the following command to see if port forwardind is enabled
+cat /proc/sys/net/ipv4/ip_forward
+# if previous command returns 0 access the following file
+sudo vim /etc/sysctl.conf
+# uncomment the following line
+net.ipv4.ip_forward
+# enable changes
+sudo sysctl -p /etc/sysctl.conf
+# the following command should now return 1
+cat /proc/sys/net/ipv4/ip_forward
+# set up forwarding to 8080
+sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
+sudo iptables -A INPUT -p tcp -m tcp --sport 80 -j ACCEPT
+sudo iptables -A OUTPUT -p tcp -m tcp --dport 80 -j ACCEPT
 ```
 
 Clara Backend Challenge
