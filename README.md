@@ -43,7 +43,7 @@ Start server
 # run prod start script
 ./start.sh
 ```
-Enable screen to manage screens 
+#### Enable screen to manage sessions 
 ```sh
 # start a new screen
 screen
