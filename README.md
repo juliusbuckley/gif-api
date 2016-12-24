@@ -3,7 +3,7 @@
 ## Installation steps
 
 #### Environment dependencies
-Install node on Ubuntu server (Assumption: Ubuntu 16.04.1 x64 distribution)
+Install node on Ubuntu server (Assumption: Ubuntu 16.04.1 x64 distribution):
 ```sh
 # Node.js v7 installation on Digital Ocean droplet
 curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
@@ -11,7 +11,7 @@ sudo apt-get install -y nodejs
 ```
 
 #### Clone project
-Clone repo from github
+Clone repo from github:
 ```sh
 # run git clone
 git clone https://github.com/juliusbuckley/clara-challenge-backend.git
@@ -30,20 +30,20 @@ Install project dependencies and transpile server folder:
 
 #### Local development
 
-Install nodemon for dev environment or update dev:start npm script to use node
+Install nodemon for dev environment or update dev:start npm script to use node:
 ```sh
 # install nodemon globally 
 npm install -g nodemon
 ```
 
-Start server and transpile with babel-cli
+Start server and transpile with babel-cli:
 ```sh
 # run dev start script
 npm run dev:start
 ```
 #### Production
 
-Start server 
+Start server: 
 ```sh
 # run prod start script
 ./start.sh
@@ -62,9 +62,9 @@ screen –ls
 screen -r idNumber
 ```
 
-#### Avoid typing listen port into url 
+#### Enable port forwarding 
 ```sh
-# run the following command to see if port forwardind is enabled
+# run the following command to see if port forwarding is enabled
 cat /proc/sys/net/ipv4/ip_forward
 # if previous command returns 0 access the following file
 sudo vim /etc/sysctl.conf
