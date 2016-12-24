@@ -43,6 +43,17 @@ Start server
 # run prod start script
 ./start.sh
 ```
+Enable screen to manage screens 
+```sh
+# start a new screen
+screen
+# detach screen
+Ctrl-a d
+# list screens
+screen –ls
+#reattach screen
+screen -r idNumber
+```
 
 Clara Backend Challenge
 ============================
