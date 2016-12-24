@@ -30,7 +30,7 @@ Install project dependencies and transpile server folder:
 
 #### Local development
 
-Install nodemon for dev environment or update dev:start npm script to use node:
+Install nodemon for dev environment or update npm dev:start script to use node:
 ```sh
 # install nodemon globally 
 npm install -g nodemon
@@ -50,7 +50,9 @@ Start server:
 ```
 ## Extra Optimizations
 
-#### Enable screen to manage sessions 
+#### Enable screen  
+
+Use multiple terminal sessions within one window:
 ```sh
 # start a new screen
 screen
@@ -62,7 +64,9 @@ screen –ls
 screen -r idNumber
 ```
 
-#### Enable port forwarding 
+#### Enable port forwarding
+
+Change the app to listen on port 8080:
 ```sh
 # run the following command to see if port forwarding is enabled
 cat /proc/sys/net/ipv4/ip_forward
