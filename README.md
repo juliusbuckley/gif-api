@@ -31,8 +31,10 @@ Install project dependencies and transpile server folder:
 #### Local development
 
 Start server and transpile with babel-cli
-
+This script is utilizing nodemon
 ```sh
+# install nodemon for dev environment
+npm install -g nodemon
 # run dev start script
 npm run dev:start
 ```
