@@ -10,6 +10,17 @@ curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
+Set enviroment variables
+```sh
+# open the following file
+nano ~/.bashrc
+# add the following lines of code to set environment variables
+export GIPHY_KEY=<insertKey>
+export PORT='8080'
+# force session to read file
+source ~/.bashrc
+```
+
 #### Clone project
 Clone repo from github:
 ```sh
