@@ -95,7 +95,7 @@ sudo iptables -A INPUT -p tcp -m tcp --sport 80 -j ACCEPT
 sudo iptables -A OUTPUT -p tcp -m tcp --dport 80 -j ACCEPT
 ```
 
-#### Use
+## Use
 
 - HTTP GET API with the path `/search/[search term]`
 - Always returns exactly 5 results or 0 results if there are less than 5 available
