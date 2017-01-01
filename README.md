@@ -1,4 +1,20 @@
-# GIF search web service
+# GIF search API
+
+## Use
+
+- HTTP GET API with the path `/search/[search term]`
+- Always returns exactly 5 results or 0 results if there are less than 5 available
+- Responses are in JSON in the following format:
+```json
+{
+  "data": [
+    {
+      "gif_id": "FiGiRei2ICzzG",
+      "url": "http://giphy.com/gifs/funny-cat-FiGiRei2ICzzG",
+    }
+  ]
+}
+```
 
 ## Installation steps
 
@@ -93,20 +109,4 @@ cat /proc/sys/net/ipv4/ip_forward
 sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
 sudo iptables -A INPUT -p tcp -m tcp --sport 80 -j ACCEPT
 sudo iptables -A OUTPUT -p tcp -m tcp --dport 80 -j ACCEPT
-```
-
-## Use
-
-- HTTP GET API with the path `/search/[search term]`
-- Always returns exactly 5 results or 0 results if there are less than 5 available
-- Responses are in JSON in the following format:
-```json
-{
-  "data": [
-    {
-      "gif_id": "FiGiRei2ICzzG",
-      "url": "http://giphy.com/gifs/funny-cat-FiGiRei2ICzzG",
-    }
-  ]
-}
 ```
