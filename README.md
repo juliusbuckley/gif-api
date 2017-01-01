@@ -41,7 +41,7 @@ source ~/.bashrc
 Clone repo from github:
 ```sh
 # run git clone
-git clone https://github.com/juliusbuckley/clara-challenge-backend.git
+git clone https://github.com/juliusbuckley/gif-api.git
 ```
 
 #### Project dependencies
